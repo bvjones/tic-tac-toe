@@ -6,17 +6,21 @@ describe Player do
 
 
   describe 'initialises' do
-    it 'with Player1 name' do
-      expect(player1.name).to eq("Ben")
+    context 'Player1' do
+      it 'with player name' do
+        expect(player1.name).to eq("Ben")
+      end
+      it 'with player mark of X' do
+        expect(player1.mark).to eq(:X)
+      end
     end
-    it 'with Player2 name' do
-      expect(player2.name).to eq("Rob")
-    end
-    it 'with Player1 mark of X' do
-      expect(player1.mark).to eq(:X)
-    end
-    it 'with Player1 mark of X' do
-      expect(player2.mark).to eq(:O)
+    context 'Player2' do
+      it 'with player name' do
+        expect(player2.name).to eq("Rob")
+      end
+      it 'with player mark of 0' do
+        expect(player2.mark).to eq(:O)
+      end
     end
   end
 end

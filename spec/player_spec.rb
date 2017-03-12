@@ -4,7 +4,6 @@ describe Player do
   subject(:player1) {described_class.new("Ben", :X) }
   subject(:player2) {described_class.new("Rob", :O) }
 
-
   describe 'initialises' do
     context 'Player1' do
       it 'with player name' do
